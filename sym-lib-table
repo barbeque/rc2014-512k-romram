@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AS6C4008-55PCN")(type "KiCad")(uri "${KIPRJMOD}/AS6C4008-55PCN/AS6C4008-55PCN.kicad_sym")(options "")(descr ""))
+)
