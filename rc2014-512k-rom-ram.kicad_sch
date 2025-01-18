@@ -1556,25 +1556,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -4.729 37.9086 0)
+			(property "Reference" "U2"
+				(at 0 40.64 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "AS6C4008-55PCN"
-				(at -7.3992 -43.734 0)
+				(at 0 38.1 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "AS6C4008-55PCN:DIP254P1524X393-32"
+			(property "Footprint" "Package_DIP:DIP-32_W15.24mm_Socket_LongPads"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1733,24 +1731,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(pin no_connect line
-					(at -17.78 -30.48 0)
-					(length 5.08)
-					(name "A18"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
 					)
 				)
 				(pin input line
@@ -2304,6 +2284,26 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "AS6C4008-55PCN_1_0"
+				(pin input line
+					(at -17.78 -30.48 0)
+					(length 5.08)
+					(name "A18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -8994,7 +8994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nAS6C4008 Series 4-Mbit (512 K x 8) 3 V 55 ns CMOS Static RAM - PDIP-32\n"
+		(property "Description" "AS6C4008 Series 4-Mbit (512 K x 8) 3 V 55 ns CMOS Static RAM - PDIP-32"
 			(at 167.64 58.42 0)
 			(effects
 				(font

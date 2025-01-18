@@ -1,4 +1,5 @@
 *.lck
+*auto_save*
 *.zip
 out
 *backups
