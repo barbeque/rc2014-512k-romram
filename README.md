@@ -5,3 +5,8 @@
 This board is based on [the schematic listed on the RC2014 website](https://rc2014.co.uk/modules/512k-rom-512k-ram-module/), which is in turn derived from [Sergey Kiselev's Zeta 2 SBC](https://github.com/skiselev/zeta_sbc) (GPLv3). Please honour the licensing for any derivatives made of this board.
 
 Symbol for the AS6C4008 ROM comes from SnapEDA.
+
+## Version 2
+Fixed:
+ - D0 was not written into the 7474
+ - A18 was not connected on the RAM, due to a buggy (copy-paste error) SnapEDA symbol.

@@ -6158,6 +6158,16 @@
 		)
 		(uuid "fe024b76-e4ff-4dd2-9861-ce59838e754d")
 	)
+	(text "For some reason, ma18..21 are pulled down by\nonly 1k on the original board. Not sure why\nthey would do this."
+		(exclude_from_sim no)
+		(at 259.08 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ad743160-faab-4d51-b647-f8447af033fa")
+	)
 	(text "consider putting a cap here"
 		(exclude_from_sim no)
 		(at 33.02 64.135 0)
