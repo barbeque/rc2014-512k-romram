@@ -1556,23 +1556,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U2"
-				(at 0 40.64 0)
+			(property "Reference" "U"
+				(at -4.729 37.9086 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
 			(property "Value" "AS6C4008-55PCN"
-				(at 0 38.1 0)
+				(at -7.3992 -43.734 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-32_W15.24mm_Socket_LongPads"
+			(property "Footprint" "AS6C4008-55PCN:DIP254P1524X393-32"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1591,7 +1593,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "\nAS6C4008 Series 4-Mbit (512 K x 8) 3 V 55 ns CMOS Static RAM - PDIP-32\n"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Alliance Memory,"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1601,7 +1612,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Alliance Memory,"
+			(property "Description_1" "\nAS6C4008 Series 4-Mbit (512 K x 8) 3 V 55 ns CMOS Static RAM - PDIP-32\n"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1834,24 +1845,6 @@
 						)
 					)
 					(number "15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -35.56 0)
-					(length 5.08)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "16"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2304,6 +2297,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 -35.56 0)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5429,6 +5440,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 211.455 25.4)
@@ -5447,6 +5554,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26121273-e568-4b1e-b652-debcc3e61983")
+	)
+	(junction
+		(at 33.02 67.945)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54a35d13-64ca-4e91-8b90-cfb2e9d65180")
 	)
 	(junction
 		(at 114.3 175.895)
@@ -5483,6 +5596,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce54637a-e1d3-4955-b01d-20d8e18aae64")
+	)
+	(junction
+		(at 33.02 70.485)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8983ca2-464f-4cf5-b842-5121b38c83b1")
 	)
 	(junction
 		(at 114.3 166.37)
@@ -5640,7 +5759,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 67.945) (xy 23.495 67.945)
+			(xy 39.37 67.945) (xy 33.02 67.945)
 		)
 		(stroke
 			(width 0)
@@ -5700,7 +5819,7 @@
 	)
 	(wire
 		(pts
-			(xy 23.495 70.485) (xy 39.37 70.485)
+			(xy 23.495 70.485) (xy 33.02 70.485)
 		)
 		(stroke
 			(width 0)
@@ -5960,6 +6079,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 67.945) (xy 23.495 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b86323c2-09cf-4d37-a8c6-a2a64c8cff58")
+	)
+	(wire
+		(pts
 			(xy 248.92 82.55) (xy 255.905 82.55)
 		)
 		(stroke
@@ -6147,6 +6276,16 @@
 			(type default)
 		)
 		(uuid "f8e6a2b3-c912-4127-b9bd-04ee66fc986b")
+	)
+	(wire
+		(pts
+			(xy 33.02 70.485) (xy 39.37 70.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc2ca656-ae7c-4b7c-bd71-241d286c91e2")
 	)
 	(wire
 		(pts
@@ -8762,6 +8901,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 33.02 70.485 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d27e2db-a8e5-43a3-9bff-dce10504ef09")
+		(property "Reference" "#FLG02"
+			(at 33.02 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 33.02 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 33.02 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86d5ed07-0cff-49dd-857e-01d456073848")
+		)
+		(instances
+			(project "rc2014-512k-rom-ram"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 57.15 150.495 0)
 		(unit 1)
@@ -8985,7 +9191,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-32_W15.24mm_Socket_LongPads"
+		(property "Footprint" "AS6C4008-55PCN:DIP254P1524X393-32"
 			(at 167.64 58.42 0)
 			(effects
 				(font
@@ -9125,6 +9331,16 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AS6C4008-55PCN/Alliance+Memory%252C+Inc./view-part/?ref=eda"
+			(at 167.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\nAS6C4008 Series 4-Mbit (512 K x 8) 3 V 55 ns CMOS Static RAM - PDIP-32\n"
 			(at 167.64 58.42 0)
 			(effects
 				(font
@@ -11035,6 +11251,73 @@
 			(project "rc2014-512k-rom-ram"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 33.02 67.945 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f383bc09-6ab4-4ab2-9699-8ba59746ca59")
+		(property "Reference" "#FLG01"
+			(at 33.02 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 33.02 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 33.02 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe703d48-a943-41b7-984d-a8f3e7e58302")
+		)
+		(instances
+			(project ""
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
