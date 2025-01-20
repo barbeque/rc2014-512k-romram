@@ -187,8 +187,8 @@
 		)
 		(symbol "AS6C4008-55PCN_0_0"
 			(rectangle
-				(start -12.7 -40.64)
-				(end 12.7 35.56)
+				(start -12.7 35.56)
+				(end 12.7 -40.64)
 				(stroke
 					(width 0.4064)
 					(type default)
@@ -414,24 +414,6 @@
 				)
 			)
 			(pin input line
-				(at -17.78 25.4 0)
-				(length 5.08)
-				(name "CE"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -17.78 -10.16 0)
 				(length 5.08)
 				(name "A10"
@@ -442,24 +424,6 @@
 					)
 				)
 				(number "23"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 22.86 0)
-				(length 5.08)
-				(name "OE"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "24"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -532,24 +496,6 @@
 					)
 				)
 				(number "28"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 20.32 0)
-				(length 5.08)
-				(name "WE"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "29"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -768,6 +714,60 @@
 					)
 				)
 				(number "16"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 25.4 0)
+				(length 5.08)
+				(name "~{CE}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 22.86 0)
+				(length 5.08)
+				(name "~{OE}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 20.32 0)
+				(length 5.08)
+				(name "~{WE}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "29"
 					(effects
 						(font
 							(size 1.016 1.016)
