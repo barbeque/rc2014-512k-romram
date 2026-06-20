@@ -5573,7 +5573,7 @@
 		)
 		(uuid "9480f179-69f5-4f94-8582-7cd3cf4a8eb1")
 	)
-	(text "Use $F0..FF to change memory mapper control"
+	(text "Use $70..7F to change memory mapper control"
 		(exclude_from_sim no)
 		(at 52.07 99.06 0)
 		(effects
@@ -5603,6 +5603,16 @@
 			(justify left bottom)
 		)
 		(uuid "c8b78cd5-cf9d-47bf-850d-098f11b93958")
+	)
+	(text "$78 and above for page config\nbits 1-5: page # (times two)\nbit 5: RAM, ~{ROM}"
+		(exclude_from_sim no)
+		(at 88.9 146.685 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d5764f34-1d7f-43f4-b4ed-721df05906cd")
 	)
 	(junction
 		(at 211.455 25.4)
